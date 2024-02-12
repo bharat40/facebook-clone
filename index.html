@@ -20,12 +20,35 @@
         .main {
             margin-top: 30px;
         }
+
+        .container {
+            display: flex;
+        }
+
+        @media (min-width: 1100px) {
+            .container {
+                gap: 70px;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 130px
+            }
+        }
+
+        @media (max-width: 1100px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                gap: 70px;
+                margin-top: 200px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <section class="main">
-        <div style="display: flex; gap: 70px; justify-content: center; align-items: center; position: relative; top:130px">
+        <div class="container">
             <div>
                 <span style="color: blue; font-weight: bold; font-size: 50px;">facebook</span>
                 <p style="font-size: 30px;"> Facebook helps you connect and share <br>
